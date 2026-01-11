@@ -1,29 +1,52 @@
 import streamlit as st
+st.set_page_config(
+    page_title="Livestock Monitoring System",
+    layout="wide"
+)
 st.markdown("""
 <style>
-.main {
-    background-color: #f8f9fa;
+/* Remove top padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
+
+/* App background */
+.stApp {
+    background-color: #f4f6f9;
+}
+
+/* Card style */
 .card {
-    padding: 15px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
-    margin-bottom: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
 }
+
+/* Status badges */
 .badge-normal {
+    background-color: #2ecc71;
     color: white;
-    background-color: #28a745;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 4px 12px;
+    border-radius: 15px;
     font-size: 12px;
 }
+
 .badge-alert {
+    background-color: #e74c3c;
     color: white;
-    background-color: #dc3545;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 4px 12px;
+    border-radius: 15px;
     font-size: 12px;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
