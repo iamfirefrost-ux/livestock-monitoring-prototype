@@ -1,3 +1,41 @@
+st.markdown("""
+<style>
+.main {
+    background-color: #f8f9fa;
+}
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+.badge-normal {
+    color: white;
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.badge-alert {
+    color: white;
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="card">
+<h4>Animal Analysis</h4>
+<p><b>Animal ID:</b> Cow-01</p>
+<p><b>Status:</b> <span class="badge-normal">Normal</span></p>
+<p><b>Attendance:</b> Present</p>
+</div>
+""", unsafe_allow_html=True)
+
 import streamlit as st
 
 # App title
