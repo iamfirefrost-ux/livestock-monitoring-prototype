@@ -53,6 +53,13 @@ st.markdown("""
 
 st.markdown("""
 <div class="card">
+<h2>🐄 AI-Based Livestock Monitoring System</h2>
+<p>Image-based identification • Visual abnormality alerts • Attendance tracking</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="card">
 <h4>Animal Analysis</h4>
 <p><b>Animal ID:</b> Cow-01</p>
 <p><b>Status:</b> <span class="badge-normal">Normal</span></p>
